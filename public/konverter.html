@@ -1,6 +1,6 @@
 <!--
 //Tim Roesner
-//09/12/16
+//09/10/16
 //Apps
 
 Hey There! Glad you could make it to the behind the scenes. As you stumble through this code you might find some extras. 
@@ -10,6 +10,12 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 <head>
 
 <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aff">
+<meta name="theme-color" content="#ffffff">
 
 <style type="text/css">
 
@@ -136,16 +142,16 @@ img.appDetail {
 	float: left;
 	z-index: 1;
 	position: relative;
-	margin-left: 5%;
 	width: 125px;
 	height: auto;
+	margin-left: 5%;
 	margin-right: 5%;
 }
 
 .textDetail {
 	position: relative;
-	margin-right: 3%;
 	overflow: hidden;
+	margin-right: 3%;
 	z-index: 1;
 }
 
@@ -169,13 +175,13 @@ img.appDetail {
 }
 
 .hiddenScroll{
-	width: 1175px;
+	width: 685px;
 	height: 100%;
 }
 
 .screenshot {
 	height: 95%;
-	margin-top: 1%;
+	margin-top: 1.25%;
 	margin-left: 1.25%;
 }
 
@@ -190,7 +196,7 @@ h3 {
 }
 
 </style>
-<title>Tim Roesner | HikeBuddy</title>
+<title>Tim Roesner | Konverter</title>
 </head>
 <body>
 <div class="header">
@@ -202,31 +208,32 @@ h3 {
 </div>	
 <div class="detail">
 <div class="icondiv">
-<img class="appDetail" src="images/iconHB.png">
-<a href="https://itunes.apple.com/us/app/hikebuddy/id1144943498?mt=8"><img class="appstore" src="images/appstore.png"></a>
+<img class="appDetail" src="images/iconK.png">
+<a href="https://appsto.re/de/8fzueb.i"><img class="appstore" src="images/appstore.png"></a>
 </div>
 <div class="textDetail">
-<h2>HikeBuddy</h2>
-<p>I started this project over Summer 2016 to experiment with the location data that the iPhone offers. For the temperature data I decided to use the Dark Skies API as I think it is the best on the makret right now. With the newly announced Apple Watch Series 2 with GPS, it offers similar capabilities even without iPhone, which is why I am currently working on bringing the same features to an independent Apple Watch App.</p>
+<h2>Konverter</h2>
+<p>The main reason I started this project was the complexety of all the other converters on the App Store. I just wanted a simple unit konverter without having to touch too many buttons to get the results I wanted. Being a native of Germany and living in the US, I always had a need for a unit converter. Especially the everchanging conversion betwenn &dollar; and &euro;.</p>
 </div>
 <h3>iPhone</h3>
 <div class="scrollView">
 <div class="hiddenScroll">
-<img class="screenshot" src="images/Altitude.png">
-<img class="screenshot" src="images/Compass.png">
-<img class="screenshot" src="images/Speed.png">
-<img class="screenshot" src="images/Temp.png">
-<img class="screenshot" src="images/Settings.png">
+<img class="screenshot" src="images/Promo1K.png">
+<img class="screenshot" src="images/Promo2K.png">
+<img class="screenshot" src="images/Promo3K.png">
 </div>
 </div>
 </div>
 <!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
 <div class="footer">
-<a class="icn" href="https://twitter.com/germanpupil"><img class="icons" src="images/twitter.png"></a>
+<a class="icn" href="https://twitter.com/timroesner"><img class="icons" src="images/twitter.png"></a>
 <a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile"><img class="icons" src="images/stackoverflow.png"></a>
 <a class="icn" href="https://github.com/timroesner"><img class="icons" src="images/github.png"></a>
 <a class="icn" href="https://www.linkedin.com/in/timroesner"><img class="icons" src="images/linkedin.png"></a>
-<p class="footertxt">Copyright &copy; 2017 Tim Roesner. <br>All rights reserved | Congrats you found my <a href="http://ghost-timroesner.rhcloud.com">blog</a></p> <!-- Okay, finding my blog in the small print wasn't too hard right?!. I mean you made it down to the last lines of code so you must have found it! Anyways if you are interested in movies with a little tech stuff inbetween, go ahead and click the thing!
+<p class="footertxt">Copyright &copy;   
+	<script type="text/javascript">
+  		document.write(new Date().getFullYear());
+	</script> Tim Roesner. <br>All rights reserved | Congrats you found my <a href="https://ghost-timroesner.herokuapp.com">blog</a></p> <!-- Okay, finding my blog in the small print wasn't too hard right?!. I mean you made it down to the last lines of code so you must have found it! Anyways if you are interested in movies with a little tech stuff inbetween, go ahead and click the thing!
 //Note to self on Aug 12 2016: Man I really need to start writing again, last post over two years back... -->
 </div>
 <script>

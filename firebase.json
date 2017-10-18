@@ -1,0 +1,11 @@
+{"hosting": {
+    "public": "public",
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "redirects": [
+    {"source" : "/thoughts",
+        "destination" : "https://ghost-timroesner.herokuapp.com/thoughts-all/",
+        "type" : 302}
+  	]
+  }
+}

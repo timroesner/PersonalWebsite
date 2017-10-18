@@ -1,7 +1,7 @@
 <!--
 //Tim Roesner
-//02/05/17
-//Thanks
+//08/11/16
+//Home
 
 Hey There! Glad you could make it to the behind the scenes. As you stumble through this code you might find some extras. 
 -->
@@ -9,6 +9,12 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 <head>
 
 <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aff">
+<meta name="theme-color" content="#ffffff">
 
 <style type="text/css">
 
@@ -20,7 +26,11 @@ body {
     background: #fff;
 }
 
-img.inLine {
+
+img.hero {
+	margin-top: 2%;
+	z-index: 0;
+	position: relative;
 	width: 100%;
 }
 
@@ -62,7 +72,6 @@ a.nav:hover {
 h1 {
 	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
 	text-align: center;
-	margin-top: 75px;
 	color: black;
 	font-size: 300%;
 }
@@ -113,19 +122,20 @@ a {
 
 
 </style>
-<title>Tim Roesner | Videos</title>
+<title>Tim Roesner | Home</title>
 </head>
 <body>
 <div class="header">
 <!-- Hamburger menus suck! Come on people it's 2016, let's fix navigation. -->
-<a class="nav" href="/index">Home</a>
+<a class="active" href="/index">Home</a>
 <a class="nav" href="/about">About</a>
-<a class="active" href="/apps">Apps</a>
+<a class="nav" href="/apps">Apps</a>
 <a class="nav" href="/contact">Contact</a>
 </div>
+<img class="hero" src="images/9 copy.jpg" alt="Hero">
 <div class="text">
-<h1>Thank You!</h1>
-<p align="center">Your message was received and I will get back to you as soon as possible. <br><a href="/contact">Return to form</a></p>
+<h1>About me</h1>
+<p align="center">Currently I'm living in San Jose,CA , where I am pursuing my bachelors degree in Software Engineering at San Jose State University. Besides my studies I play tenor saxophone in an ensemble and enjoy swimming or surfing. I am also very enthusiastic about movies and film, my favorite directors are David Fincher, Richard Linklater and Damien Chazelle in that order. If you want to know why I admire Fincher so much watch <a href="https://youtu.be/QPAloq5MCUA">this</a>. If you want to learn about the projects I am currently working on Check out my <a href="https://github.com/timroesner">GitHub</a>.</p>
 <!-- 
 My idea of professionalism 
 is probably a lot of people's 
@@ -135,12 +145,14 @@ idea of obsessive.
 </div>
 <!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
 <div class="footer">
-<a class="icn" href="https://twitter.com/germanpupil"><img class="icons" src="images/twitter.png"></a>
+<a class="icn" href="https://twitter.com/timroesner"><img class="icons" src="images/twitter.png"></a>
 <a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile"><img class="icons" src="images/stackoverflow.png"></a>
 <a class="icn" href="https://github.com/timroesner"><img class="icons" src="images/github.png"></a>
 <a class="icn" href="https://www.linkedin.com/in/timroesner"><img class="icons" src="images/linkedin.png"></a>
-<p class="footertxt">Copyright &copy; 2017 Tim Roesner. <br>All rights reserved | Congrats you found my <a href="http://ghost-timroesner.rhcloud.com">blog</a></p> <!-- Okay, finding my blog in the small print wasn't too hard right?!. I mean you made it down to the last lines of code so you must have found it! Anyways if you are interested in movies with a little tech stuff inbetween, go ahead and click the thing!
-//Note to self on Aug 12 2016: Man I really need to start writing again, last post over two years back... -->
+<p class="footertxt">Copyright &copy;   
+	<script type="text/javascript">
+  		document.write(new Date().getFullYear());
+	</script> Tim Roesner. <br>All rights reserved | Congrats you found my <a href="https://ghost-timroesner.herokuapp.com">blog</a></p> <!-- Okay, finding my blog in the small print wasn't too hard right?!. I mean you made it down to the last lines of code so you must have found it! Anyways if you are interested in movies with a little tech stuff inbetween, go ahead and click the thing! -->
 </div>
 <script>
   
