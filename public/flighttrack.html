@@ -1,11 +1,10 @@
 <!--
 //Tim Roesner
-//08/22/16
+//09/10/16
 //Apps
 
 Hey There! Glad you could make it to the behind the scenes. As you stumble through this code you might find some extras. 
 
-Fun fact this site was written on flight AA71 from FRA to DAL
 -->
 <html>
 <head>
@@ -80,12 +79,12 @@ h1 {
 
 p {
 	border-width: 1px;
-	font-size: 2vh;
+	font-size: 100%;
 	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
 }
 
 .footer {
-	padding-top: 0%;
+	padding-top: 10%;
 	z-index: 2;
 	width: 100%;
 	text-align: center;
@@ -122,14 +121,21 @@ h2 {
 	font-family: Avenir, "Lucida Grande", Verdana, Arial;
 }
 
-img.app {
-	margin-bottom: 50%;
+img.appDetail {
 	width: 125px;
 	position: relative;
+	float: left;
+	margin-bottom: 15px;
 	border-color: #b3b3b3;
 	border-width: 1.5px;
 	border-style: solid;
 	border-radius: 22%;
+}
+
+.appstore{
+	width: 128px;
+	position: relative;
+	float: left;
 }
 
 .icondiv {
@@ -137,35 +143,61 @@ img.app {
 	z-index: 1;
 	position: relative;
 	width: 125px;
-	margin-left: 3%;
+	height: auto;
+	margin-left: 5%;
+	margin-right: 5%;
 }
 
-.texttop {
+.textDetail {
 	position: relative;
-	margin-left: 140px;
-	padding-left: 5%;
-	margin-right: 2%;
-	height: 190px;
-}
-
-.text {
-	position: relative;
-	margin-right: 2%;
-	margin-left: 140px;
-	padding-left: 5%;
+	overflow: hidden;
+	margin-right: 3%;
 	z-index: 1;
-	height: 190px;
 }
 
-.portfolio{
+.detail{
 	margin: auto;
 	padding-top: 5em;
-	max-width: 1000px; 
+	max-width: 700px; 
 	z-index: 1;
+}
+
+.scrollView{
+	height: 400px;
+	margin-left: 5%;
+	margin-right: 5%;
+	border-color: #b3b3b3;
+	border-width: 1.5px;
+	border-style: solid;
+	border-radius: 2%;
+	overflow: scroll;
+	-webkit-overflow-scrolling: touch;
+}
+
+.hiddenScroll{
+	width: 925px;
+	height: 100%;
+}
+
+.screenshot {
+	height: 95%;
+	margin-top: 1.25%;
+	margin-left: 1.25%;
+}
+
+h3 {
+	font-family: Avenir, "Lucida Grande", Verdana, Arial;
+	font: 100%;
+	margin-left: 6%;
+	margin-top: 35px;
+	-webkit-margin-before: 0;
+	margin-bottom: 2px;
+	font-style: normal;
+	font-weight: normal;
 }
 
 </style>
-<title>Tim Roesner | Apps</title>
+<title>Tim Roesner | FlightTrack 6</title>
 </head>
 <body>
 <div class="header">
@@ -174,56 +206,25 @@ img.app {
 <a class="nav" href="/about">About</a>
 <a class="active" href="/apps">Apps</a>
 <a class="nav" href="/contact">Contact</a>
-</div>
-<div class="portfolio">
+</div>	
+<div class="detail">
 <div class="icondiv">
-<img class="app" src="images/iconFT.png">	
-<img class="app" src="images/iconK.png">
-<img class="app" src="images/iconHB.png">
-<img class="app" src="images/iconV.png">
-<img class="app" src="images/iconT.png">
-<img class="app" src="images/iconM.png">
-<img class="app" src="images/icon9to5.png">
-<img class="app" src="images/iconDF.png">
+<img class="appDetail" src="images/iconFT.png">
+<a href="https://itunes.apple.com/us/app/flighttrack-6/id1320687057?mt=8"><img class="appstore" src="images/appstore.png"></a>
 </div>
-<div class="texttop">
+<div class="textDetail">
 <h2>FlightTrack 6</h2>
-<p>A simple and elegant way to keep track of your travels and the ones of your friends and family, if you are their ride to or from the airport. <a href="/flighttrack">Read more</a></p>
+<p>This app has been my most ambitious project yet, as I set out to build the perfect travel companion app. Early on I put a focus on localization and accessibility to open the app to a wider audience. As the app took shape I was finally able to test it on a couple of flights I took in early June. After which I spend some more time adjusting things and after started a public beta for which about 50 people signed up. With their help I was able to fix a lot of little things and am very proud to have the app in store now.</p>
 </div>
-<div class="text">
-<h2>Konverter</h2>
-<p>A simple app to convert measures between the metric and the imperial system. Units include temperature, length, weight and currency (&dollar; and &euro;). Apple Watch included. <a href="/konverter">Read more</a></p>
+<h3>iPhone</h3>
+<div class="scrollView">
+<div class="hiddenScroll">
+<img class="screenshot" src="images/en_Cal_8P.png">
+<img class="screenshot" src="images/en_Details_8P.png">
+<img class="screenshot" src="images/en_Trip_8P.png">
+<img class="screenshot" src="images/en_Main_8P.png">
 </div>
-<div class="text">
-<h2>HikeBuddy</h2>
-<p>Your outdoor companion with features like altitude, compass, speed and temperature at your current location. Apple Watch coming soon. <a href="/hikebuddy">Read more</a></p>
 </div>
-<div class="text">
-<h2>Videos</h2>
-<p>An App which let's you copy your videos to your iPad, after Apple broke this function in iOS 10.2 with the release of the new TV App.<a href="/videos"> Read more</a></p>
-</div>
-<div class="text">
-<h2>Tuner</h2>
-<p>An App for musicians, that let's you tune your instrument. Shows the nearest pitch, with visual flat or sharp indicator, and optional frequency display.  <a href="https://itunes.apple.com/us/app/tuner-tune-your-instrument/id1298919475?mt=8">App Store</a></p>
-</div>
-<div class="text">
-<h2>Movies</h2>
-<p>Multi platform App for tvOS and iOS which allows me to stream my private movie library, which is hosted on OneDrive and accessed through a custom API.  <a href="https://github.com/timroesner/tvOS-movies">GitHub</a></p>
-</div>
-<div class="text">
-<h2>9to5Mac</h2>
-<p>A native client to read 9to5Mac without ads. Defaults to Reader View so the reading experience feels more natural. Side project which is maintaned and used by myself.  <a href="https://github.com/timroesner/9to5Mac">GitHub</a></p>
-</div>
-<div class="text">
-<h2>Daring Fireball</h2>
-<p>A native client to read Daring Fireball. Having this App improves performance and makes reading the blog less of a hassel on iPhone. <a href="https://github.com/timroesner/DaringFireball">GitHub</a></p>
-</div>
-<!-- 
-A movie is made for an audience and 
-a film is made for both the audience 
-and the film-makers.
-- David Fincher
--->
 </div>
 <!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
 <div class="footer">
