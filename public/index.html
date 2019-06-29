@@ -7,162 +7,78 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 -->
 <html>
 <head>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aff">
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<meta name="theme-color" content="#ffffff">
 
-<meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aff">
-<meta name="theme-color" content="#ffffff">
+	<style type="text/css">
 
-<style type="text/css">
+	img.hero {
+		z-index: 0;
+		position: relative;
+		width: 100%;
+	}
 
+	.text {
+		z-index: 0;
+		padding-top: 3%;
+		width: 100%;
+		position: relative;
+	}
 
-body {
-    font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-    margin: 0;
-    color: #000;
-    background: #fff;
-}
+	p {
+		font-size: 100%;
+		margin-right: 10%;
+		margin-left: 10%;
+		font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
+	}
 
-
-img.hero {
-	margin-top: 2%;
-	z-index: 0;
-	position: relative;
-	width: 100%;
-}
-
-.header {
-	padding-bottom: 1em;
-	padding-top: 1em;
-	text-align: center;
-	width: 100%;
-	z-index: 2;
-	position: fixed;
-	background-color: #7f7f7f;
-}
-
-.active {
-	margin-left: 3%;
-	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-	margin-right: 3%;
-	font-size: 18px;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	text-decoration: none;
-	color: white;
-}
-
-.nav {
-    margin-left: 3%;
-    font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-    font-size: 18px;
-    margin-right: 3%;
-	text-decoration: none;
-	color: white;
-}
-
-a.nav:hover {
-	border-bottom-width: 2px;
-	border-bottom-style: solid;
-}
-
-h1 {
-	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-	text-align: center;
-	color: black;
-	font-size: 300%;
-}
-
-.text {
-	z-index: 0;
-	padding-top: 3%;
-	width: 100%;
-	position: relative;
-}
-
-p {
-	font-size: 100%;
-	margin-right: 10%;
-	margin-left: 10%;
-	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-}
-
-.footer {
-	padding-top: 3%;
-	z-index: 0;
-	width: 100%;
-	text-align: center;
-}
-
-img.icons {
-	margin-left: 1%;
-	margin-right: 1%;
-	height: 42px;
-	width: 42px;
-}
-
-a.icn:hover {
-	-webkit-filter: invert(100%);
-}
-
-.footertxt {
-	font-size: 12px;
-	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-}
-
-a {
-	text-decoration: underline;
-	color: black;
-	font-family: avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-}
-
-
-
-</style>
-<title>Tim Roesner | Home</title>
+	a.icn:hover {
+		-webkit-filter: invert(100%);
+	}
+	</style>
+	<title>Tim Roesner | Home</title>
 </head>
+
 <body>
-<div class="header">
-<!-- Hamburger menus suck! Come on people it's 2016, let's fix navigation. -->
-<a class="active" href="/index">Home</a>
-<a class="nav" href="/about">About</a>
-<a class="nav" href="/apps">Apps</a>
-<a class="nav" href="/contact">Contact</a>
-</div>
-<img class="hero" src="images/9 copy.jpg" alt="Hero">
+	<div class="header">
+		<a class="active" href="/index">Home</a>
+		<a class="nav" href="/about">About</a>
+		<a class="nav" href="/apps">Apps</a>
+		<a class="nav" href="/contact">Contact</a>
+	</div>
+
+	<img class="hero" src="images/9 copy.jpg" alt="Hero">
 <div class="text">
-<h1>About me</h1>
+<h1 class="text-center text-5xl font-semibold">About me</h1>
 <p align="center">Currently I'm living in San Jose, CA, where I'm pursuing my bachelors degree in Software Engineering at San Jose State University. Besides my studies I play tenor saxophone in an ensemble and enjoy swimming or surfing. I am also very enthusiastic about movies and film, my favorite directors are David Fincher, Richard Linklater and Damien Chazelle in that order. If you want to know why I admire Fincher so much watch <a href="https://youtu.be/QPAloq5MCUA">this</a>. If you want to learn about the projects I am currently working on, check out my <a href="https://github.com/timroesner">GitHub</a>.</p>
-<!-- 
-My idea of professionalism 
-is probably a lot of people's 
-idea of obsessive.
-- David Fincher
--->
-</div>
-<!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
-<div class="footer">
-<a class="icn" href="https://twitter.com/timroesner"><img class="icons" src="images/twitter.png"></a>
-<a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile"><img class="icons" src="images/stackoverflow.png"></a>
-<a class="icn" href="https://github.com/timroesner"><img class="icons" src="images/github.png"></a>
-<a class="icn" href="https://www.linkedin.com/in/timroesner"><img class="icons" src="images/linkedin.png"></a>
-<p class="footertxt">Copyright &copy;   
-	<script type="text/javascript">
-  		document.write(new Date().getFullYear());
-	</script> Tim Roesner. <br>All rights reserved | Congrats you found my <a href="https://ghost-timroesner.herokuapp.com">blog</a></p> <!-- Okay, finding my blog in the small print wasn't too hard right?!. I mean you made it down to the last lines of code so you must have found it! Anyways if you are interested in movies with a little tech stuff inbetween, go ahead and click the thing! -->
-</div>
-<script>
-  
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-82427670-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+</div>
+	<!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
+	<div class="mt-8 flex justify-center">
+		<a class="" href="https://twitter.com/timroesner">
+			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/twitter.png">
+		</a>
+		<a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile">
+			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/stackoverflow.png">
+		</a>
+		<a class="icn" href="https://github.com/timroesner">
+			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/github.png">
+		</a>
+		<a class="icn" href="https://www.linkedin.com/in/timroesner">
+			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/linkedin.png">
+		</a>
+	</div>
+	<p class="text-center my-4 text-xs">Copyright &copy;
+		<script type="text/javascript">
+			document.write(new Date().getFullYear());
+		</script>
+		Tim Roesner. <br>All rights reserved | Congrats you found my
+		<a class="underline" href="https://ghost-timroesner.herokuapp.com">blog</a>
+	</p>
 </body>

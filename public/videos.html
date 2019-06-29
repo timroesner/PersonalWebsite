@@ -14,110 +14,33 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="manifest" href="/manifest.json">
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aff">
+<link rel="stylesheet" type="text/css" href="index.css" />
 <meta name="theme-color" content="#ffffff">
 
 <style type="text/css">
+	img.inLine {
+		margin-top: 1rem;
+		width: 100%;
+	}
 
+	h1 {
+		text-align: center;
+		font-size: 300%;
+	}
 
-body {
-    font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-    margin: 0;
-    color: #000;
-    background: #fff;
-}
-
-img.inLine {
-	width: 100%;
-}
-
-.header {
-	padding-bottom: 1em;
-	padding-top: 1em;
-	text-align: center;
-	width: 100%;
-	z-index: 2;
-	position: fixed;
-	background-color: #7f7f7f;
-}
-
-.active {
-	margin-left: 3%;
-	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-	margin-right: 3%;
-	font-size: 18px;
-	border-bottom-style: solid;
-	border-bottom-width: 2px;
-	text-decoration: none;
-	color: white;
-}
-
-.nav {
-    margin-left: 3%;
-    font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-    font-size: 18px;
-    margin-right: 3%;
-	text-decoration: none;
-	color: white;
-}
-
-a.nav:hover {
-	border-bottom-width: 2px;
-	border-bottom-style: solid;
-}
-
-h1 {
-	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-	text-align: center;
-	margin-top: 75px;
-	color: black;
-	font-size: 300%;
-}
-
-.text {
+	.text {
 	z-index: 0;
 	padding-top: 3%;
 	width: 100%;
 	position: relative;
-}
+	}
 
-p {
+	p {
 	font-size: 100%;
 	margin-right: 10%;
 	margin-left: 10%;
 	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-}
-
-.footer {
-	padding-top: 3%;
-	z-index: 0;
-	width: 100%;
-	text-align: center;
-}
-
-img.icons {
-	margin-left: 1%;
-	margin-right: 1%;
-	height: 42px;
-	width: 42px;
-}
-
-a.icn:hover {
-	-webkit-filter: invert(100%);
-}
-
-.footertxt {
-	font-size: 12px;
-	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-}
-
-a {
-	text-decoration: underline;
-	color: black;
-	font-family: avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-}
-
-
-
+	}
 </style>
 <title>Tim Roesner | Videos</title>
 </head>
@@ -130,38 +53,36 @@ a {
 <a class="nav" href="/contact">Contact</a>
 </div>
 <div class="text">
-<h1>Videos App</h1>
-<p align="left">This is a guide to walk you through how to use my video app, available on the App Store <a href="https://itunes.apple.com/us/app/10.2-videos-fix/id1190990668?mt=8">here.</a><br>New movies and TV Shows are added through iTunes File Sharing, which means the iPad has to be connected to any iTunes capable computer.<br>In order for TV Shows to show up in the right Tab they have to be in a folder, named like the show.<br>I personally use the free program <a href="https://subler.org">Subler</a> to tag my files with metadata, like artwork, description, title, etc. <img class="inLine" src="images/videos.png"><br><br>Currently the app supports .mov, .mp4 and .m4v files which have to be DRM free. All other files will be ignored or are not playable. Please also make sure, that you toggle off the app contents in your iCloud backup, otherwise it will eat up your storage.<br>
-Newly added files might not show up right away, if so you have to restart the app (swipe up in multitasking and reopen).<br> 
-<br>For more questions you can contact me <a href="/contact">here</a>.</p>
-<!-- 
-My idea of professionalism 
-is probably a lot of people's 
-idea of obsessive.
-- David Fincher
--->
+<h1 class="pt-16 md:pt-12 pb-8">Videos App</h1>
+<p align="left">This is a guide to walk you through how to use my video app, available on the App Store <a href="https://itunes.apple.com/us/app/10.2-videos-fix/id1190990668?mt=8">
+	here.</a><br>New movies and TV Shows are added through iTunes File Sharing, which means the iPad has to be connected to any iTunes capable computer.<br>In order for TV Shows 
+	to show up in the right Tab they have to be in a folder, named like the show.<br>I personally use the free program <a href="https://subler.org">Subler</a> to tag my files with 
+	metadata, like artwork, description, title, etc. <img class="inLine" src="images/videos.png"><br><br>Currently the app supports .mov, .mp4 and .m4v files which have to be DRM 
+	free. All other files will be ignored or are not playable. Please also make sure, that you toggle off the app contents in your iCloud backup, otherwise it will eat up your 
+	storage.<br>
+	Newly added files might not show up right away, if so you have to restart the app (swipe up in multitasking and reopen).<br> 
+	<br>For more questions you can contact me <a href="/contact">here</a>.</p>
 </div>
 <!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
-<div class="footer">
-<a class="icn" href="https://twitter.com/timroesner"><img class="icons" src="images/twitter.png"></a>
-<a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile"><img class="icons" src="images/stackoverflow.png"></a>
-<a class="icn" href="https://github.com/timroesner"><img class="icons" src="images/github.png"></a>
-<a class="icn" href="https://www.linkedin.com/in/timroesner"><img class="icons" src="images/linkedin.png"></a>
-<p class="footertxt">Copyright &copy;   
-	<script type="text/javascript">
-  		document.write(new Date().getFullYear());
-	</script> Tim Roesner. <br>All rights reserved | Congrats you found my <a href="https://ghost-timroesner.herokuapp.com">blog</a></p> <!-- Okay, finding my blog in the small print wasn't too hard right?!. I mean you made it down to the last lines of code so you must have found it! Anyways if you are interested in movies with a little tech stuff inbetween, go ahead and click the thing!
-//Note to self on Aug 12 2016: Man I really need to start writing again, last post over two years back... -->
-</div>
-<script>
-  
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-82427670-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+<div class="mt-8 flex justify-center">
+		<a class="" href="https://twitter.com/timroesner">
+			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/twitter.png">
+		</a>
+		<a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile">
+			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/stackoverflow.png">
+		</a>
+		<a class="icn" href="https://github.com/timroesner">
+			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/github.png">
+		</a>
+		<a class="icn" href="https://www.linkedin.com/in/timroesner">
+			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/linkedin.png">
+		</a>
+	</div>
+	<p class="text-center my-4 text-xs">Copyright &copy;
+		<script type="text/javascript">
+			document.write(new Date().getFullYear());
+		</script>
+		Tim Roesner. <br>All rights reserved | Congrats you found my
+		<a class="underline" href="https://ghost-timroesner.herokuapp.com">blog</a>
+	</p>
 </body>

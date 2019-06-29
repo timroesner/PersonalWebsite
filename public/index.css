@@ -19,12 +19,40 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-
  body {
   font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
   margin: 0;
   color: #000;
   background: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
+    margin: 0;
+    color: #FFF;
+    background: #000;
+  }
+}
+
+input {
+  background-color: #FFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  input {
+    background-color: #2B2D2F;
+  }
+}
+
+textarea {
+  background-color: #FFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  textarea {
+    background-color: #2B2D2F;
+  }
 }
 
 .header {
@@ -37,17 +65,30 @@ html {
   background-color: #7f7f7f;
 }
 
+@media (prefers-color-scheme: dark) {
+  .header {
+    padding-bottom: 1em;
+    padding-top: 1em;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    background-color: #2B2D2F;
+  }
+}
+
 .nav {
   margin-left: 3%;
   font-size: 18px;
   margin-right: 3%;
   text-decoration: none;
-  color: white;
+  color: #FFF;
 }
 
 a.nav:hover {
 	border-bottom-width: 2px;
-	border-bottom-style: solid;
+  border-bottom-style: solid;
+  border-color: #FFF;
 }
 
 .active {
@@ -57,7 +98,26 @@ a.nav:hover {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   text-decoration: none;
-  color: white;
+  color: #FFF;
+}
+
+a {
+  text-decoration: underline;
+  color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  a {
+    text-decoration: underline;
+    color: white;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .invert {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+  }
 }
 
 /**
@@ -488,7 +548,6 @@ html {
 *::after {
   border-width: 0;
   border-style: solid;
-  border-color: #e2e8f0;
 }
 
 /**
@@ -556,16 +615,6 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
-}
-
-/**
- * Reset links to optimize for opt-in styling instead of
- * opt-out.
- */
-
-a {
-  color: inherit;
-  text-decoration: inherit;
 }
 
 /**
@@ -3721,6 +3770,10 @@ video {
 
 .min-h-0 {
   min-height: 0;
+}
+
+.min-h-xxs {
+  min-height: 9rem;
 }
 
 .min-h-full {
@@ -8707,6 +8760,10 @@ code {
 
   .md\:min-h-0 {
     min-height: 0;
+  }
+
+  .md\:min-h-xxs {
+    min-height: 9rem;
   }
 
   .md\:min-h-full {
