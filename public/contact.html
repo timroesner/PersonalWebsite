@@ -6,76 +6,70 @@
 Hey There! Glad you could make it to the behind the scenes. As you stumble through this code you might find some extras. 
 -->
 <html>
+
 <head>
 
-<meta name=viewport content="width=device-width, initial-scale=1">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aff">
-<link rel="stylesheet" type="text/css" href="index.css" />
-<meta name="theme-color" content="#ffffff">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#007aff">
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<meta name="theme-color" content="#ffffff">
 
-<style type="text/css">
+	<style type="text/css">
+		input[type=text] {
+			padding-left: 20px;
+			padding-bottom: 5px;
+			padding-right: 20px;
+			padding-top: 5px;
+			margin-left: 0;
+			margin-bottom: 27px;
+			margin-right: 0;
+			margin-top: 5px;
+			width: 100%;
+			font-size: 100%;
+			font-family: avenir, "Lucida Grande", Verdana, Arial, sans-serif;
+			display: inline-block;
+			border: 1px solid #808080a6;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
 
-input[type=text] {
-		padding-left: 20px;
-		padding-bottom: 5px;
-		padding-right: 20px;
-		padding-top: 5px;
-		margin-left: 0;
-		margin-bottom: 27px;
-		margin-right: 0;
-		margin-top: 5px;
-		width: 100%;
-		font-size: 100%;
-		font-family: avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-    	display: inline-block;
-    	border: 1px solid #808080a6;
-    	border-radius: 5px;
-    	box-sizing: border-box;
-}
+		input[type=submit] {
+			padding-bottom: 8px;
+			padding-top: 8px;
+			margin-top: 17px;
+			margin-bottom: 20px;
+			width: 100%;
+			font-size: 125%;
+			color: white;
+			font-family: avenir, "Lucida Grande", Verdana, Arial, sans-serif;
+			background-color: #0A60FF;
+			border: none;
+			-webkit-appearance: none;
+			border-radius: 7px;
+		}
 
-input[type=submit]{
-		padding-bottom: 8px;
-		padding-top: 8px;
-		margin-top: 17px;
-		margin-bottom: 20px;
-		width: 100%;
-		font-size: 125%;
-		color: white;
-		font-family: avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-    	background-color: #0A60FF;
-    	border: none;
-    	-webkit-appearance: none;
-    	border-radius: 7px;
-}
+		input[type=submit]:hover {
+			background-color: #1193FF;
+		}
 
-input[type=submit]:hover{
-	background-color: #1193FF;
-}
-
-form{
-	padding-top: 5em;
-	width: 70%;
-	margin: auto;
-}
-
-textarea {
-	width: 100%;
-	font-family: avenir, "Lucida Grande", Verdana, Arial, sans-serif;
-	margin: 8px 0;
-	padding: 12px 20px;
-	font-size: 100%;
-	border: 1px solid #808080a6;
-	border-radius: 5px;
-	box-sizing: border-box;
-}
-
-</style>
-<title>Tim Roesner | Contact</title>
+		textarea {
+			width: 100%;
+			font-family: avenir, "Lucida Grande", Verdana, Arial, sans-serif;
+			margin: 8px 0;
+			padding: 12px 20px;
+			font-size: 100%;
+			border: 1px solid #808080a6;
+			border-radius: 5px;
+			box-sizing: border-box;
+		}
+	</style>
+	<title>Tim Roesner | Contact</title>
 </head>
+
 <body>
 	<div class="header">
 		<!-- Hamburger menus suck! Come on people it's 2016, let's fix navigation. -->
@@ -84,21 +78,23 @@ textarea {
 		<a class="nav" href="/apps">Apps</a>
 		<a class="active" href="/contact">Contact</a>
 	</div>
-			<form method="post" action="https://formspree.io/mail@timroesner.com" id="formID">
-			<p align="center">If you prefer to contact me directly over email click <a href="mailto:mail@timroesner.com?subject=Contact%20from%20website">here</a></p><br>
-				<label for="Name">Name:</label>
-				<input type="text" name="Name" id="Name" required>
-				
-				<label for="Email">Email:</label>
-				<input type="text" name="_replyto" id="Email" required>
-			
-				<label for="Message">Message:</label><br />
-				<textarea name="Message" rows="8" cols="20" id="Message"></textarea>
+	<form class="pt-20 mx-4 md:m-auto max-w-3xl" method="post" action="https://formspree.io/mail@timroesner.com"
+		id="formID">
+		<p class="text-center pt-4">If you prefer to contact me directly over email click <a
+				href="mailto:mail@timroesner.com?subject=Contact%20from%20website">here</a></p><br>
+		<label for="Name">Name:</label>
+		<input type="text" name="Name" id="Name" required>
 
-				<input type="hidden" name="_next" value="/thanks" />
-				<input type="hidden" name="_subject" value="Contact from timroesner.com" />
-				<input type="submit" name="submit" value="Submit" />
-			</form>
+		<label for="Email">Email:</label>
+		<input type="text" name="_replyto" id="Email" required>
+
+		<label for="Message">Message:</label><br />
+		<textarea name="Message" rows="8" cols="20" id="Message"></textarea>
+
+		<input type="hidden" name="_next" value="/thanks" />
+		<input type="hidden" name="_subject" value="Contact from timroesner.com" />
+		<input type="submit" name="submit" value="Submit" />
+	</form>
 	<!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
 	<div class="mt-8 flex justify-center">
 		<a class="" href="https://twitter.com/timroesner">
@@ -119,6 +115,6 @@ textarea {
 			document.write(new Date().getFullYear());
 		</script>
 		Tim Roesner. <br>All rights reserved | Congrats you found my
-		<a class="underline" href="https://ghost-timroesner.herokuapp.com">blog</a>
+		<a class="underline" href="https://blog.timroesner.com">blog</a>
 	</p>
 </body>
