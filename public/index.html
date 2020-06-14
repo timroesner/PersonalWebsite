@@ -16,6 +16,12 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="index.css" />
 	<meta name="theme-color" content="#ffffff">
+	
+	<script> 
+    fetch('footer.html')
+      .then(data => data.text())
+      .then(html => document.getElementById('footer').innerHTML = html);
+    </script> 
 
 	<style type="text/css">
 
@@ -65,26 +71,5 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 	watch <a href="https://youtu.be/QPAloq5MCUA">this</a>. If you want to learn about 
 	the projects I currently work on, check out my <a href="https://github.com/timroesner">GitHub</a>.</p>
 </div>
-	<!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
-	<div class="mt-8 flex justify-center">
-		<a class="" href="https://twitter.com/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/twitter.png">
-		</a>
-		<a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/stackoverflow.png">
-		</a>
-		<a class="icn" href="https://github.com/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/github.png">
-		</a>
-		<a class="icn" href="https://www.linkedin.com/in/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/linkedin.png">
-		</a>
-	</div>
-	<p class="text-center my-4 text-xs">Copyright &copy;
-		<script type="text/javascript">
-			document.write(new Date().getFullYear());
-		</script>
-		Tim Roesner. <br>All rights reserved | Congrats you found my
-		<a class="underline" href="https://blog.timroesner.com">blog</a>
-	</p>
+<div id="footer"></div>
 </body>

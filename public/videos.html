@@ -18,6 +18,12 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 <link rel="stylesheet" type="text/css" href="index.css" />
 <meta name="theme-color" content="#ffffff">
 
+<script> 
+	fetch('footer.html')
+	.then(data => data.text())
+	.then(html => document.getElementById('footer').innerHTML = html);
+</script> 
+
 <style type="text/css">
 	img.inLine {
 		margin-top: 1rem;
@@ -30,28 +36,27 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 	}
 
 	.text {
-	z-index: 0;
-	padding-top: 3%;
-	width: 100%;
-	position: relative;
+		z-index: 0;
+		padding-top: 3%;
+		width: 100%;
+		position: relative;
 	}
 
 	p {
-	font-size: 100%;
-	margin-right: 10%;
-	margin-left: 10%;
-	font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
+		font-size: 100%;
+		margin-right: 10%;
+		margin-left: 10%;
+		font-family: Avenir, "Lucida Grande", Verdana, Arial, sans-serif;
 	}
 </style>
 <title>Tim Roesner | Videos</title>
 </head>
 <body>
 <div class="header">
-<!-- Hamburger menus suck! Come on people it's 2016, let's fix navigation. -->
-<a class="nav" href="/index">Home</a>
-<a class="nav" href="/about">About</a>
-<a class="active" href="/apps">Apps</a>
-<a class="nav" href="/contact">Contact</a>
+	<a class="nav" href="/index">Home</a>
+	<a class="nav" href="/about">About</a>
+	<a class="active" href="/apps">Apps</a>
+	<a class="nav" href="/contact">Contact</a>
 </div>
 <div class="text">
 <h1 class="pt-16 md:pt-12 pb-8">Videos App</h1>
@@ -64,26 +69,5 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 	Newly added files might not show up right away, if so you have to restart the app (swipe up in multitasking and reopen).<br> 
 	<br>For more questions you can contact me <a href="/contact">here</a>.</p>
 </div>
-<!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
-<div class="mt-8 flex justify-center">
-		<a class="" href="https://twitter.com/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/twitter.png">
-		</a>
-		<a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/stackoverflow.png">
-		</a>
-		<a class="icn" href="https://github.com/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/github.png">
-		</a>
-		<a class="icn" href="https://www.linkedin.com/in/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/linkedin.png">
-		</a>
-	</div>
-	<p class="text-center my-4 text-xs">Copyright &copy;
-		<script type="text/javascript">
-			document.write(new Date().getFullYear());
-		</script>
-		Tim Roesner. <br>All rights reserved | Congrats you found my
-		<a class="underline" href="https://blog.timroesner.com">blog</a>
-	</p>
+<div id="footer"></div>
 </body>
