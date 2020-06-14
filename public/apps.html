@@ -20,6 +20,12 @@ Fun fact this site was written on flight AA71 from FRA to DAL
 	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="index.css" />
 	<meta name="theme-color" content="#ffffff">
+	
+	<script> 
+		fetch('footer.html')
+			.then(data => data.text())
+			.then(html => document.getElementById('footer').innerHTML = html);
+	</script>
 
 	<style type="text/css">
 		img.rounded-corners {
@@ -59,100 +65,56 @@ Fun fact this site was written on flight AA71 from FRA to DAL
 
 <body>
 	<div class="header">
-		<!-- Hamburger menus suck! Come on people it's 2016, let's fix navigation. -->
 		<a class="nav" href="/index">Home</a>
 		<a class="nav" href="/about">About</a>
 		<a class="active" href="/apps">Apps</a>
 		<a class="nav" href="/contact">Contact</a>
 	</div>
-	<div class="pt-12 md:pt-20 mx-4">
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/iconFS.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">FlightStatus</h2>
-				<p>A simple and elegant way to keep track of your travels and the ones of your friends and family, if you are their ride
-					to or from the airport. <a href="/flightstatus">Read more</a></p>
-			</div>
-		</div>
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/iconBP.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">BayPass</h2>
-				<p>Our senior project, which focuses on mobile transit in the Bay Area. Includes route planning and 
-					ticketing. <a href="https://github.com/timroesner/BayPass">GitHub</a></p>
-			</div>
-		</div>
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/iconK.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">Konverter</h2>
-				<p>A simple app to convert measures between the metric and the imperial system. Units include temperature, length, weight
-					and currency (&dollar; and &euro;). Apple Watch included. <a href="/konverter">Read more</a></p>
-			</div>
-		</div>
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/iconHB.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">HikeBuddy</h2>
-				<p>Your outdoor companion with features like altitude, compass, speed and temperature at your current location. Apple
-					Watch coming soon. <a href="/hikebuddy">Read more</a></p>
-			</div>
-		</div>
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/iconV.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">Videos</h2>
-				<p>An App which let's you copy your videos to your iPad, after Apple broke this function in iOS 10.2 with the release
-					of the new TV App.<a href="/videos"> Read more</a></p>
-			</div>
-		</div>
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/iconT.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">Tuner</h2>
-				<p>An App for musicians, that let's you tune your instrument. Shows the nearest pitch, with visual flat or sharp indicator,
-					and optional frequency display. <a href="https://itunes.apple.com/us/app/tuner-tune-your-instrument/id1298919475?mt=8">App
-					Store</a></p>
-			</div>
-		</div>
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/iconM.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">Movies</h2>
-				<p>Multi platform App for tvOS and iOS which allows me to stream my private movie library, which is hosted on OneDrive
-					and accessed through a custom API. <a href="https://github.com/timroesner/tvOS-movies">GitHub</a></p>
-			</div>
-		</div>
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/icon9to5.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">9to5Mac</h2>
-				<p>A native client to read 9to5Mac without ads. Defaults to Reader View so the reading experience feels more natural.
-					Side project which is maintaned and used by myself. <a href="https://github.com/timroesner/9to5Mac">GitHub</a></p>
-			</div>
-		</div>
-		<div class="mt-8 md:mt-4 max-w-3xl md:mx-auto">
-			<img class="rounded-corners w-20 md:w-32 float-left mr-4" src="images/iconDF.png">
-			<div class="md:min-h-xxs">
-				<h2 class="text-2xl font-medium">Daring Fireball</h2>
-				<p>A native client to read Daring Fireball. Having this App improves performance and makes reading the blog less of a
-					hassel on iPhone. <a href="https://github.com/timroesner/DaringFireball">GitHub</a></p>
-			</div>
-		</div>
-	</div>
-	<!-- These icons are modifided and created by yours truly. Why is it that there aren't any icon packs that include these four icons? At least I couldn't find them-->
-	<div class="mt-8 flex justify-center">
-		<a class="" href="https://twitter.com/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/twitter.png">
+	
+	<div class="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 pt-20 md:pt-24 max-w-screen-md mx-8 md:mx-auto">
+		<a href="/flightstatus">
+			<img class="rounded-corners" src="images/iconFS.png">
+			<p class="mt-1 text-center font-semibold">FlightStatus</p>
 		</a>
-		<a class="icn" href="https://stackoverflow.com/users/5482513/timlr?tab=profile">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/stackoverflow.png">
+		<a href="https://github.com/timroesner/BayPass">
+			<img class="rounded-corners" src="images/iconBP.png">
+			<p class="mt-1 text-center font-semibold">BayPass</p>
 		</a>
-		<a class="icn" href="https://github.com/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/github.png">
+		<a href="https://apps.apple.com/us/app/konverter-travel-cooking/id1146196348">
+			<img class="rounded-corners" src="images/iconK.png">
+			<p class="mt-1 text-center font-semibold">Konverter</p>
 		</a>
-		<a class="icn" href="https://www.linkedin.com/in/timroesner">
-			<img class="w-12 h-12 mx-2 hover:shadow-lg rounded-full" src="images/linkedin.png">
+		<a href="/videos">
+			<img class="rounded-corners" src="images/iconV.png">
+			<p class="mt-1 text-center font-semibold">Video Player</p>
+		</a>
+		<a href="https://apps.apple.com/us/app/mygpa-tracker/id1503862262">
+			<img class="rounded-corners" src="images/iconMyGPA.png">
+			<p class="mt-1 text-center font-semibold">MyGPA</p>
+		</a>
+		<a href="https://apps.apple.com/us/app/hikebuddy/id1144943498">
+			<img class="rounded-corners" src="images/iconHB.png">
+			<p class="mt-1 text-center font-semibold">HikeBuddy</p>
+		</a>
+		<a href="https://apps.apple.com/us/app/tuner-tune-your-instrument/id1298919475">
+			<img class="rounded-corners" src="images/iconT.png">
+			<p class="mt-1 text-center font-semibold">Tuner</p>
+		</a>
+		<a href="https://github.com/timroesner/tvOS-movies">
+			<img class="rounded-corners" src="images/iconM.png">
+			<p class="mt-1 text-center font-semibold">Movies</p>
+		</a>
+		<a href="https://apps.apple.com/us/app/blackout-shutoff-status/id1484920524">
+			<img class="rounded-corners" src="images/iconBlackout.png">
+			<p class="mt-1 text-center font-semibold">Blackout</p>
+		</a>
+		<a href="https://github.com/timroesner/9to5Mac">
+			<img class="rounded-corners" src="images/icon9to5.png">
+			<p class="mt-1 text-center font-semibold">9to5Mac</p>
+		</a>
+		<a href="https://github.com/timroesner/DaringFireball">
+			<img class="rounded-corners" src="images/iconDF.png">
+			<p class="mt-1 text-center font-semibold">Daring Fireball</p>
 		</a>
 	</div>
 	<div id="footer"></div>
