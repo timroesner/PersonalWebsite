@@ -27,54 +27,11 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 	</script> 
 
 	<style type="text/css">
-		h1 {
-			text-align: center;
-			font-size: 300%;
-		}
-
-		h2 {
-			margin-bottom: -16px;
-			margin-top: 0px;
-			font-style: normal;
-			font-weight: normal;
-			font-size: 150%;
-			font-family: Avenir, "Lucida Grande", Verdana, Arial;
-		}
-
-		img.appDetail {
-			margin-bottom: 15px;
+		img.rounded-corners {
 			border-color: #b3b3b3;
 			border-width: 1.5px;
 			border-style: solid;
 			border-radius: 22%;
-		}
-
-		.icondiv {
-			float: left;
-			margin-right: 5%;
-		}
-
-		.detail {
-			margin: auto;
-			padding-top: 5em;
-			max-width: 700px;
-			z-index: 1;
-		}
-
-		.scrollView {
-			height: 400px;
-			border-color: #b3b3b3;
-			border-width: 1.5px;
-			border-style: solid;
-			border-radius: 3%;
-			overflow: scroll;
-			-webkit-overflow-scrolling: touch;
-		}
-
-		.screenshot {
-			height: 95%;
-			margin-top: 1.25%;
-			margin-left: 1.25%;
 		}
 	</style>
 	<title>Tim Roesner | FlightStatus</title>
@@ -82,33 +39,29 @@ Hey There! Glad you could make it to the behind the scenes. As you stumble throu
 
 <body>
 	<div class="header">
-		<!-- Hamburger menus suck! Come on people it's 2016, let's fix navigation. -->
 		<a class="nav" href="/index">Home</a>
 		<a class="nav" href="/about">About</a>
 		<a class="active" href="/apps">Apps</a>
 		<a class="nav" href="/contact">Contact</a>
 	</div>
-	<div class="detail">
-		<div class="icondiv w-24 md:w-32 mx-4 md:mx-0">
-			<img class="appDetail w-full" src="images/iconFS.png">
-			<a href="https://itunes.apple.com/us/app/flighttrack-6/id1320687057?mt=8"><img class="w-full" src="images/appstore.png"></a>
+	<div class="flex flex-wrap md:justify-center pt-20 md:pt-32 mx-8 md:mx-auto md:max-w-screen-md">
+		<div class="md:w-1/2 text-center md:text-left md:ml-16 md:mt-8">
+			<img class="rounded-corners w-32 mx-auto md:ml-0" src="images/iconFS.png"/>
+			<p class="mt-2 text-3xl font-semibold">FlightStatus</p>
+			<p class="mt-8 text-lg leading-snug md:mr-8">Skip the airport screens and keep track of all your flight information in one place. 
+				Works world wide with any airline.</p>
+			<a href="https://apps.apple.com/us/app/flightstatus/id1320687057">
+					<picture>
+						<source srcset="images/AppStoreBadge-dark.svg" media="(prefers-color-scheme: dark)">
+						<img class="mt-6 mx-auto md:ml-0" src="images/AppStoreBadge.svg" />
+					</picture>
+			</a>
 		</div>
-		<div class="mx-4 md:mx-0 md:max-w-3xl">
-			<h2 class="font-medium">FlightStatus</h2>
-			<p class="mt-4">This app has been my most ambitious project yet, as I set out to build the perfect travel companion app. Early on I
-				put a focus on localization and accessibility to open the app to a wider audience. As the app took shape I was finally
-				able to test it on a couple of flights I took in early June. After which I spend some more time adjusting things and
-				after started a public beta for which about 50 people signed up. With their help I was able to fix a lot of little things
-				and am very proud to have the app in store now.</p>
-		</div>
-		<p class="mt-4 ml-4 md:ml-0">iPhone</p>
-		<div class="scrollView mx-4 md:mx-0">
-			<div class="flex">
-				<img class="screenshot" src="images/en_Cal_8P.png">
-				<img class="screenshot" src="images/en_Details_8P.png">
-				<img class="screenshot" src="images/en_Trip_8P.png">
-				<img class="screenshot" src="images/en_Main_8P.png">
-			</div>
+		<div class="md:w-2/5 mx-auto">
+			<picture>
+				<source srcset="images/FS-Promo-dark.svg" media="(prefers-color-scheme: dark)">
+				<img class="mt-8 md:mt-0" src="images/FS-Promo.svg" />
+			</picture>
 		</div>
 	</div>
 	<div id="footer"></div>
